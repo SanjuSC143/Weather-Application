@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "CommonCharacters",
+      "request": "launch",
+      "mainClass": "CommonCharacters",
+      "projectName": "frontend_8a0d227c"
+    },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",

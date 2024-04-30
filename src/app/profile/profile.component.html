@@ -1,0 +1,21 @@
+
+<div class="app-container">
+    <div class="weather-container">
+        <div class="left-container">
+            <div class="user-profile">
+                <img src="/assets/profile.png" alt="user-profile-img">
+            </div>
+            <div class="user-details">
+                <h3>{{loginService.getUser().username}}</h3>
+                <p>{{loginService.getUser().email}}</p>
+            </div>
+            <button mat-raised-button color="primary" (click)="logout()">Logout</button>
+        </div>
+        <div class="right-container">
+            <h3 style="font-size: large; font-weight: 500;">Favorite City</h3>
+            <div class="city-card" *ngFor="let city of cities">
+                <p>{{ city }}</p>
+            </div>
+        </div>
+    </div>
+</div>

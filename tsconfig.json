@@ -2,8 +2,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "noUnusedLocals": false,
     "outDir": "./dist/out-tsc",
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -24,9 +25,11 @@
     ]
   },
   "angularCompilerOptions": {
+    "ivy": false,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    
   }
 }

@@ -1,0 +1,21 @@
+<div class="app-container">
+    <div class="weather-container">
+        <div class="left-container">
+            <google-map class="gmap"
+                        height="500px"
+                        width="750px"
+                        [center]="center"
+                        [zoom]="zoom"
+                        (mapClick)="moveMap($event)"
+                        (mapMousemove)="move($event)"
+                        (mapClick)="addMarker($event)">
+            <map-marker #marker="mapMarker"
+                        *ngFor="let markerPosition of markerPositions"
+                        [position]="markerPosition"
+                        (mapClick)="openInfoWindow(marker)"></map-marker>
+            <map-info-window>{{this.weatherService.temperatureData.temperature}}</map-info-window>
+            </google-map>
+        </div>
+    </div>
+</div>
+        

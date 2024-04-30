@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html, body { height: 100%; }
+body { 
+        margin: 0; 
+        font-family: "Open Sans", sans-serif; 
+        padding: 0;
+        overflow: hidden;
+    }
+.text-center{
+    text-align: center;
+}
+.ml20 {
+    margin-left: 20px !important;
+  }
+  .mr20 {
+    margin-right: 20px !important;
+  }
+  .mt20 {
+    margin-top: 20px !important;
+  }
+  .mb20 {
+    margin-bottom: 20px !important;
+  }
+  .ml10 {
+    margin-left: 10px !important;
+  }
+  .mr10 {
+    margin-right: 10px !important;
+  }
+  .mt10 {
+    margin-top: 10px !important;
+  }
+  .mb10 {
+    margin-bottom: 10px !important;
+  }
+  
